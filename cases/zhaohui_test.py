@@ -11,7 +11,7 @@ casedata=huoqu_test(case_path,2)
 @ddt.ddt
 class Testzhaohui(unittest.TestCase):
     def setUp(self):
-        self.logs = log.log_message()
+        self.logs = log.Log()
         self.derve=webdriver.Firefox()
         self.zhaohui_fun=Zaohui_tes(self.derve)
     @ddt.data(*casedata)

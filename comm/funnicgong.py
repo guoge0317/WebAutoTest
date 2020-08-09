@@ -7,7 +7,7 @@ from function import log
 class Login_tes:#登录模块封装
     def __init__(self,driver):#
         self.driber=driver
-        self.logs = log.log_message()
+        self.logs = log.Log()
         self.file=open(path+"\\data\\page_data.yaml", "r",encoding= "utf-8")
         self.data=yaml.load(self.file)
         self.file.close()
@@ -40,7 +40,7 @@ class Zhuce_tes:#注册模块的封装
     def __init__(self,driver):
         self.deriver=driver
         title = '注册模块'
-        self.logs = log.log_message()
+        self.logs = log.Log()
         self.file1=open(path+"\\data\\page_data.yaml", "r",encoding= "utf-8")
         self.data=yaml.load(self.file1)
         self.file1.close()
@@ -82,7 +82,7 @@ class Zhuce_tes:#注册模块的封装
 class Zaohui_tes:
     def __init__(self,driver):
         self.driver=driver
-        self.logs = log.log_message()
+        self.logs = log.Log()
         self.file1=open(path+"\\data\\page_data.yaml", "r",encoding= "utf-8")
         self.data=yaml.load(self.file1)
         self.file1.close()
@@ -112,7 +112,7 @@ class Zaohui_tes:
 class Rest_tes:
     def __init__(self,driver):
         self.driver=driver
-        self.logs = log.log_message()
+        self.logs = log.Log()
         self.file1=open(path+"\\data\\page_data.yaml", "r",encoding= "utf-8")
         self.data=yaml.load(self.file1)
         self.file1.close()
@@ -149,7 +149,7 @@ class Rest_tes:
 class Xiugai_tes:
     def __init__(self,driver):
         title = '修改模块'
-        self.logs = log.log_message()
+        self.logs = log.Log()
         self.driver=driver
         self.file1=open(path+"\\data\\page_data.yaml", "r",encoding= "utf-8")
         self.data=yaml.load(self.file1)

@@ -11,7 +11,7 @@ casedata=huoqu_test(case_path,1)
 @ddt.ddt
 class Testzhuce(unittest.TestCase):
     def setUp(self):
-        self.logs = log.log_message()
+        self.logs = log.Log()
         self.derve=webdriver.Firefox()
         self.zhuce_fun=Zhuce_tes(self.derve)
     @ddt.data(*casedata)

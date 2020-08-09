@@ -1,7 +1,8 @@
 import xlrd
-import log
+from function import log
 
-logs = log.log_message()
+logs = log.Log()
+
 
 def huoqu_test(filepath, index):
     try:

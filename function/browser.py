@@ -167,8 +167,8 @@ class Browser:
     def refresh(self):
         self.driver.refresh()
 
-    # 执行js脚本
-    def execute_jscmd(self, cmd):
+    # 执行js命令
+    def execute_js(self, cmd):
         self.driver.execute_script(cmd)
 
     # 获取元素属性
